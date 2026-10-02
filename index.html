@@ -145,8 +145,39 @@
       </section>
     </main>
 
+    <section class="contact-card" aria-labelledby="contact-title">
+      <div class="contact-card__intro">
+        <p class="section-kicker">تواصل مباشر</p>
+        <h2 id="contact-title">أرسل رسالة</h2>
+        <p>املأ الحقول لفتح رسالة جديدة في تطبيق البريد الإلكتروني لديك. راجعها ثم أرسلها بنفسك.</p>
+        <a href="mailto:pc.libya@proton.me">أو راسلنا مباشرة: pc.libya@proton.me</a>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <label class="field">
+          <span>الاسم</span>
+          <input name="name" type="text" autocomplete="name" maxlength="120" required />
+        </label>
+        <label class="field">
+          <span>بريدك الإلكتروني</span>
+          <input name="email" type="email" autocomplete="email" maxlength="254" required />
+        </label>
+        <label class="field">
+          <span>موضوع الرسالة</span>
+          <input name="subject" type="text" maxlength="160" required />
+        </label>
+        <label class="field">
+          <span>نص الرسالة</span>
+          <textarea name="message" rows="5" maxlength="5000" required></textarea>
+        </label>
+        <p class="contact-privacy">لا يخزّن الموقع هذه الحقول ولا يرسلها إلى خادم. عند الضغط، تُمرّر إلى تطبيق البريد على جهازك؛ ولا تُرسل الرسالة إلا بعد تأكيدك هناك.</p>
+        <button class="contact-submit" type="submit">فتح رسالة البريد</button>
+        <p id="contact-status" class="contact-status" aria-live="polite"></p>
+      </form>
+    </section>
+
     <footer class="site-footer">
       مبادرة ملتقى الحوار السياسي الليبي–الليبي المنعقد في جنيف
     </footer>
+    <script src="contact.js" defer></script>
   </body>
 </html>
